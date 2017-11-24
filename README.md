@@ -25,6 +25,10 @@ docker0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         inet 172.17.0.1  netmask 255.255.0.0  broadcast 0.0.0.0                                                                        
 ```
 
+You will also want to [tweak the output resolution of the transcoded feed](https://github.com/bsodmike/easy-twitch-streaming-in-linux/blob/master/nginx.conf#L19) by editing the `-s <resolution>` option passed to `ffmepeg`.  I've used a resolution that is 720p friendly for the Acer Predator X34 display.
+
+It is advisable to use a stream bit-rate of 2000k so as to ensure your mobile streamers have a good experience.
+
 ## How to use
 
 * For the simplest case, just run the following in the root of this repo:
