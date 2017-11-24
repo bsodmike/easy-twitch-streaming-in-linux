@@ -33,6 +33,10 @@ It is advisable to use a stream bit-rate of 2000k so as to ensure your mobile st
 
 By default, 8 threads have been configured; if you have more cores, you can bump this up.
 
+### OBS Config
+
+On my i7 6850K gaming rig, I am able to push 20,000 Kbps stream to the rtmp box over a GigE link easily; however, I've experience glitches in OBS when pushing > 50,000 Kbps; I'm pushing at such a high rate so as to persist footage as 2K 'source'.
+
 ## How to use
 
 * For the simplest case, just run the following in the root of this repo:
