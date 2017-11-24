@@ -4,6 +4,8 @@ This is a slight repackaging of excellent work by [tiangolo](https://github.com/
 
 I've streamlined the process by adding a `Makefile` and `docker-compose` definition, to aid in easy specification of shared volumes, ensuring the container launches at system reboots, and exporting nginx logs for troubleshooting.
 
+I'm sharing this as per the request of the awesome [sgtawesomesauce](https://forum.level1techs.com/u/sgtawesomesauce) and if you have any questions, come [join the fun at Level 1 Techs forums](https://forum.level1techs.com/t/anyone-stream-to-twitch-much/121565/4?u=bsodmike).
+
 ## Configuration
 
 You will need to create the following directories
