@@ -37,6 +37,12 @@ By default, 8 threads have been configured; if you have more cores, you can bump
 
 On my i7 6850K gaming rig, I am able to push 20,000 Kbps stream to the rtmp box over a GigE link easily; however, I've experience glitches in OBS when pushing > 50,000 Kbps; I'm pushing at such a high rate so as to persist footage as 2K 'source'.
 
+### What if I want to push to YouTube as well?
+
+Simple, in your `nginx.conf` file in the `liveout` block, simply add another `push <URI>;` entry, for each service you wish to _concurrently_ push your stream to.  The only bottleneck apart from computing power that you'll face is Ajit Pai *cough* I mean your interwebs connection!!
+
+**I swear, that was an honest mistake...
+
 ## How to use
 
 * For the simplest case, just run the following in the root of this repo:
